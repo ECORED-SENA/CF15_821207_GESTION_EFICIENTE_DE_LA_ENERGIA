@@ -2,31 +2,59 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 20%
-    right: 10%
+    top: 15%
+    right: 73%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 35%
+    right: 15%
+  &-3
+    animation: float1 1.8s ease-in-out infinite alternate
+    position: absolute
+    top: 61%
+    right: 70%
+  &-4
+    animation: zoom-in-zoom-out 2.5s ease-in-out infinite alternate
+    position: absolute
+    top: 46.4%
+    right: 47%
+
 
 @keyframes float1
   0%
     transform: translateY(20px)
   100%
     transform: translateY(0px)
+
+    
+@keyframes zoom-in-zoom-out 
+  0% 
+    transform: scale(1, 1)
+  50% 
+    transform: scale(1.5, 1.5)
+  100% 
+    transform: scale(1, 1)
   
-.banner-principal .tarjeta
-  background-position: left 50% !important
+.tarjeta.color--white
+  background-color: $white
+  color: $black
 
-.banner-principal__row .banner-principal__img
-  width: 400px !important  
+.tarjeta-blanca
+  .tarjeta-avatar
+    padding-top: 50px
+    img
+      width: 100px
 
-.titulo-principal.color-acento-contenido .titulo-principal__numero span
-  color: white !important
+.tarjeta-tema-7
+  .tarjeta-avatar-b__img
+    img
+      width: 50%
+  .tarjeta-avatar-b
+    .tarjeta.tarjeta--border
+      padding-left: 0px
+      box-shadow: 2px 2px #c6c6c6
 
-.banner-interno__titulo__icono i
-  color: $color-primario
-
-figcaption
-  font-weight: normal
+.tema10
+  .img-infografica__card
+    width: 75%
